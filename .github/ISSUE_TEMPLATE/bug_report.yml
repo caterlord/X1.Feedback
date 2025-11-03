@@ -1,0 +1,70 @@
+name: "\U0001F41E Bug report"
+description: Report a problem you encountered while using MobilePos.
+labels:
+  - needs-triage
+  - type:bug
+assignees:
+  - caterlord
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Fill out every section so we can reproduce the issue quickly.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Desktop
+        - Android
+        - iOS
+        - Multiple
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App build number
+      description: The version shown on the About screen (for example `1.2.7 (build 456)`).
+      placeholder: 1.2.7 (build ###)
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Issue summary
+      description: Clear, concise description of the problem.
+      placeholder: The order list fails to refresh after submitting payment...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered list of steps. Include sample data or accounts if relevant.
+      placeholder: |
+        1. Go to ...
+        2. Tap ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The table status should revert to vacant after checkout.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: After checkout, the table remains in split mode and cannot be reused.
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or logs
+      description: Drag and drop screenshots, screen recordings, or relevant log excerpts. Be sure to remove any customer data.
+*** End Patch

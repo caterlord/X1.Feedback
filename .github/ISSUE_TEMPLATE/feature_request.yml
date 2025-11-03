@@ -1,0 +1,47 @@
+name: "\U0001F4A1 Feature request"
+description: Suggest an improvement or new capability for MobilePos.
+labels:
+  - needs-triage
+  - type:feature
+assignees:
+  - caterlord
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We appreciate your ideas! Let us know how this request will help your business.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Product area
+      options:
+        - Point of Sale
+        - Table Management
+        - Menu Management
+        - Reporting
+        - Integrations
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Describe the solution you would like
+      placeholder: I'd like a way to...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Explain the pain point or workflow challenge you are facing today.
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround
+      description: Tell us how you handle this today, if at all.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Include links, screenshots, or any other detail that would help us evaluate the request.
