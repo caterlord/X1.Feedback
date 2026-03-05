@@ -1,0 +1,55 @@
+name: "\U0001F4DA Documentation feedback"
+description: Report problems, issues, suggestions, or requests for MobilePos online documentation.
+labels:
+  - needs-triage
+  - type:documentation
+assignees:
+  - caterlord
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report documentation problems or suggest improvements.
+        Public documentation: https://docs.x1.tech
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Feedback type
+      options:
+        - Documentation problem or issue
+        - Suggestion to improve existing documentation
+        - Request for new documentation
+    validations:
+      required: true
+  - type: input
+    id: page_url
+    attributes:
+      label: Documentation page URL
+      description: Link the exact page or section from our public documentation site.
+      placeholder: https://docs.x1.tech/...
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the problem, issue, suggestion, or request.
+      placeholder: The setup guide is missing steps for...
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Share what is wrong/missing, what you expected, and any context that helps us improve the docs.
+      placeholder: |
+        Current content:
+        Expected content:
+        Why this matters:
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References or screenshots
+      description: Add links, screenshots, or examples that support your feedback.
