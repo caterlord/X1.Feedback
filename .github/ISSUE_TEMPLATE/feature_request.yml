@@ -1,5 +1,5 @@
 name: "\U0001F4A1 Feature request"
-description: Suggest an improvement or new capability for MobilePos.
+description: Suggest an improvement or new capability for X1 / MobilePos.
 labels:
   - needs-triage
   - type:feature
@@ -15,11 +15,12 @@ body:
     attributes:
       label: Product area
       options:
-        - Point of Sale
-        - Table Management
-        - Menu Management
+        - X1 HQ
+        - POS App
+        - Online Ordering
         - Reporting
         - Integrations
+        - Documentation
         - Other
     validations:
       required: true
@@ -35,6 +36,31 @@ body:
     attributes:
       label: What problem does this solve?
       description: Explain the pain point or workflow challenge you are facing today.
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who is affected?
+      options:
+        - Store owner / merchant admin
+        - Cashier / frontline staff
+        - Customer ordering online
+        - Internal operations / support team
+        - Multiple groups
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Business impact
+      options:
+        - Critical - blocking revenue or rollout
+        - High - major workflow gap
+        - Medium - useful improvement with clear value
+        - Low - nice to have
+    validations:
+      required: true
   - type: textarea
     id: workaround
     attributes:

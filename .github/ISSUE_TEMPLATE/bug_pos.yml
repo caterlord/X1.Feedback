@@ -1,16 +1,17 @@
-name: "\U0001F41E Bug Report"
-description: Report a problem you encountered while using MobilePos.
-title: "[Bug]: "
+name: "🐞 POS app bug report"
+description: Report a bug in the POS app, customer display, or device runtime.
+title: "[Bug][POS]: "
 labels:
   - needs-triage
   - type:bug
+  - product:pos
 assignees:
   - caterlord
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report a problem. Fill out every section so we can reproduce the issue quickly.
+        Use this form for point-of-sale app issues, including cashier flows, printing, table management, customer display, and device-specific behavior.
   - type: dropdown
     id: platform
     attributes:
@@ -20,6 +21,7 @@ body:
         - Desktop
         - Android
         - iOS
+        - Customer Display
         - Multiple
     validations:
       required: true
@@ -27,25 +29,28 @@ body:
     id: version
     attributes:
       label: App build number
-      description: The version shown on the About screen (for example `1.2.7 (build 456)`).
-      placeholder: 1.2.7 (build ###)
+      description: Version shown on the About screen or app settings page.
+      placeholder: 1.2.7 (build 456)
     validations:
       required: true
+  - type: input
+    id: store_terminal
+    attributes:
+      label: Store and terminal context
+      placeholder: Central Shop / Cashier 1 / Epson TM-m30III
   - type: textarea
     id: summary
     attributes:
       label: Issue summary
-      description: Clear, concise description of the problem.
-      placeholder: The order list fails to refresh after submitting payment...
+      placeholder: The order list fails to refresh after submitting payment.
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Numbered list of steps. Include sample data or accounts if relevant.
       placeholder: |
-        1. Go to ...
+        1. Open ...
         2. Tap ...
         3. Observe ...
     validations:
@@ -64,18 +69,24 @@ body:
       placeholder: After checkout, the table remains in split mode and cannot be reused.
     validations:
       required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Business impact
+      options:
+        - Critical - outage, data loss, or blocked operations
+        - High - major workflow broken
+        - Medium - workaround exists but painful
+        - Low - minor issue or cosmetic problem
+    validations:
+      required: true
   - type: textarea
     id: environment
     attributes:
       label: Additional context
-      description: Environment details, related tickets, or anything else that helps triage.
-      placeholder: |
-        - POS hardware model:
-        - Network conditions:
-        - Recent changes or deployments:
+      description: Include hardware model, printer model, network conditions, or recent changes if relevant.
   - type: textarea
     id: attachments
     attributes:
-      label: Screenshots or logs
-      description: Drag in screenshots, screen recordings, or relevant log excerpts. Remove any customer data.
-      placeholder: Attach files or paste log snippets here.
+      label: Screenshots, video, or logs
+      description: Drag in screenshots, recordings, or relevant log excerpts. Remove customer data.

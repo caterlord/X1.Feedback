@@ -1,8 +1,9 @@
 name: "\U0001F4DA Documentation feedback"
-description: Report problems, issues, suggestions, or requests for MobilePos online documentation.
+description: Report problems, issues, suggestions, or requests for X1 / MobilePos documentation.
 labels:
   - needs-triage
   - type:documentation
+  - product:docs
 assignees:
   - caterlord
 body:
@@ -11,6 +12,19 @@ body:
       value: |
         Use this form to report documentation problems or suggest improvements.
         Public documentation: https://docs.x1.tech
+  - type: dropdown
+    id: doc_area
+    attributes:
+      label: Documentation area
+      options:
+        - X1 HQ
+        - POS App
+        - Online Ordering
+        - Integrations
+        - General / Getting Started
+        - Other
+    validations:
+      required: true
   - type: dropdown
     id: feedback_type
     attributes:
