@@ -1,6 +1,6 @@
-name: "🐞 Online ordering bug report"
+name: "🐞 X1 ODO bug report"
 description: Report a bug in the public online ordering storefront or checkout flow.
-title: "[Bug][Online Ordering]: "
+title: "[Bug][X1 ODO]: "
 labels:
   - needs-triage
   - type:bug
