@@ -1,6 +1,6 @@
-name: "🐞 POS app bug report"
+name: "🐞 X1 POS bug report"
 description: Report a bug in the POS app, customer display, or device runtime.
-title: "[Bug][POS]: "
+title: "[Bug][X1 POS]: "
 labels:
   - needs-triage
   - type:bug
