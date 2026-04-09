@@ -1,0 +1,100 @@
+name: "🐞 X1 HQ bug report"
+description: Report a bug in the X1 HQ merchant back-office web app.
+title: "[Bug][X1 HQ]: "
+labels:
+  - needs-triage
+  - type:bug
+  - product:hq
+  - platform:web
+assignees:
+  - caterlord
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for bugs in X1 HQ, including dashboard, reports, menus, POS settings, store settings, online-ordering admin, integrations, and account/access flows.
+  - type: dropdown
+    id: area
+    attributes:
+      label: HQ area
+      description: Which part of X1 HQ is affected?
+      options:
+        - Dashboard
+        - Reports
+        - Menu Management
+        - POS Settings
+        - Store Settings
+        - Online Ordering Admin
+        - Integrations
+        - Account / Access / Login
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: page_url
+    attributes:
+      label: Page URL
+      description: Paste the exact X1 HQ page URL if available.
+      placeholder: https://hq.x1.tech/...
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 135 / Safari 18 / Edge 135
+    validations:
+      required: true
+  - type: input
+    id: merchant_context
+    attributes:
+      label: Merchant context
+      description: Company, brand, shop, and user role if relevant.
+      placeholder: Testing Brand / Central Kitchen / Manager
+  - type: textarea
+    id: summary
+    attributes:
+      label: Issue summary
+      description: Clear, concise description of the problem.
+      placeholder: The new user signs in successfully but is sent to the dashboard instead of onboarding.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use a numbered list and include any relevant setup data.
+      placeholder: |
+        1. Sign in to X1 HQ with a brand-new merchant account
+        2. Complete email verification
+        3. Observe the landing page after sign-in
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The user should be redirected to the onboarding flow.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: The user lands directly on the dashboard page.
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Business impact
+      options:
+        - Critical - outage, data loss, or blocked operations
+        - High - major workflow broken
+        - Medium - workaround exists but painful
+        - Low - minor issue or cosmetic problem
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots, video, or logs
+      description: Attach screenshots, recordings, console errors, or network traces. Remove customer data first.

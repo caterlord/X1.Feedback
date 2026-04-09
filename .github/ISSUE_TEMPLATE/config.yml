@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: MobilePos Support
+  - name: Urgent production support
     url: mailto:support@mobilepos.com
-    about: For urgent account or billing issues, email our support team directly.
+    about: For live production outages, payment failures, or urgent store-impacting issues, contact support directly.
+  - name: Account and billing support
+    url: mailto:support@mobilepos.com
+    about: For account access, billing, subscription, or merchant-admin issues, contact support directly.
+  - name: Security or responsible disclosure
+    url: mailto:support@mobilepos.com
+    about: Do not open public issues for security problems. Email the team directly instead.

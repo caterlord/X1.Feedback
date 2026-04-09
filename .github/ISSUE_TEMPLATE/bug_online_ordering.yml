@@ -1,0 +1,90 @@
+name: "🐞 Online ordering bug report"
+description: Report a bug in the public online ordering storefront or checkout flow.
+title: "[Bug][Online Ordering]: "
+labels:
+  - needs-triage
+  - type:bug
+  - product:online-ordering
+assignees:
+  - caterlord
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for bugs in the customer-facing online ordering site, including menu browsing, cart, checkout, payments, and storefront localization.
+  - type: input
+    id: storefront_url
+    attributes:
+      label: Storefront URL
+      placeholder: https://order.x1.tech/your-brand
+    validations:
+      required: true
+  - type: dropdown
+    id: reporter_type
+    attributes:
+      label: Reporter type
+      options:
+        - Merchant
+        - Customer
+        - Internal staff
+    validations:
+      required: true
+  - type: input
+    id: device_browser
+    attributes:
+      label: Device and browser
+      placeholder: iPhone 16 / Safari 18, Windows 11 / Chrome 135
+    validations:
+      required: true
+  - type: input
+    id: order_context
+    attributes:
+      label: Order or checkout context
+      description: Include order ID, payment method, fulfillment mode, or promo code if relevant.
+      placeholder: Order 12345 / Pickup / Stripe / promo SAVE10
+  - type: textarea
+    id: summary
+    attributes:
+      label: Issue summary
+      placeholder: The checkout page shows a rounded total that does not match the cart.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the storefront
+        2. Add item A and item B
+        3. Go to checkout
+        4. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Business impact
+      options:
+        - Critical - outage, payment failure, or blocked ordering
+        - High - major ordering workflow broken
+        - Medium - workaround exists but painful
+        - Low - minor issue or cosmetic problem
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots, video, or logs
+      description: Attach screenshots, recordings, or logs. Remove customer data and payment details.
