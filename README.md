@@ -1,19 +1,58 @@
-# MobilePos Feedback
+# X1 Feedback
 
-Welcome! This public repository exists purely as a feedback portal for the private **MobilePos** product. You can file bugs, feature ideas, or general questions here without seeing the private source code.
+This repository is the public feedback portal for **X1**.
 
-## How to Report
-- Use the **New Issue** button and pick the form that fits (bug or feature request).
-- Fill in every field. Details such as platform, app version, and reproduction steps let us help faster.
-- Attach screenshots/logs when possible; redact any personal or payment data.
+Use it to tell us when something in X1 is not working as expected, request an improvement, or share product feedback. The X1 application source code is private, but your feedback here helps us review, triage, and improve the product.
 
-## What Happens Next
-1. The MobilePos team triages new submissions each business day.
-2. If more information is needed, we will comment on your issue—please respond within five business days.
-3. Verified items are tracked internally. When a fix ships, we will return here to update and close the public ticket.
+## What this repository is for
 
-## Other Support Channels
-- Urgent production incidents: contact your MobilePos account representative.
-- Security disclosures: see `SECURITY.md` for instructions.
+Use this repository when you want to:
+- Report a bug in X1
+- Request a product improvement
+- Share clear feedback about an X1 workflow or screen
 
-Thanks for helping improve MobilePos!
+This repository is **not** the X1 source code repository. It is a public place for customer and partner feedback.
+
+## Before you open an issue
+
+1. Search existing issues first to avoid duplicates.
+2. Select the issue form that best matches your request.
+3. Include the product area, app version, device or platform, and store context if relevant.
+4. Describe what you expected to happen and what actually happened.
+5. Add screenshots or screen recordings when they help explain the problem.
+6. Remove or hide personal data, customer data, payment data, and passwords before you submit.
+
+## What to include in a good report
+
+A good report helps us confirm and route your issue faster.
+
+- What you were trying to do
+- The exact steps you followed
+- The result you expected
+- The result you saw instead
+- How often it happens
+- Any screenshots, videos, or error messages you can safely share
+
+## What not to post publicly
+
+Do not post:
+- Passwords, access codes, or API keys
+- Customer personal information
+- Payment card data or receipts with sensitive details
+- Security vulnerabilities
+- Urgent production incidents that need immediate action
+
+## What happens after you submit
+
+1. The X1 team reviews new submissions during business-day triage.
+2. If details are missing, we will comment on the issue and ask for more information.
+3. Confirmed items are tracked internally with the relevant product team.
+4. When work is completed or released, we will update the public issue and close it when appropriate.
+
+## Need help through a different channel?
+
+- For urgent production incidents, contact your X1 account representative or your normal support channel.
+- For security issues, follow the instructions in [SECURITY.md](SECURITY.md).
+- For expected behavior in this repository, see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+Thank you for helping improve X1.
