@@ -4,6 +4,8 @@ This repository is the public feedback portal for **X1**.
 
 Use it to tell us when something in X1 is not working as expected, request an improvement, or share product feedback. The X1 application source code is private, but your feedback here helps us review, triage, and improve the product.
 
+Official website: [https://x1.tech/](https://x1.tech/)
+
 ## What this repository is for
 
 Use this repository when you want to:
