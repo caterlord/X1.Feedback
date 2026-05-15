@@ -8,4 +8,4 @@ By participating in this feedback repository, you agree to:
 - Provide constructive feedback; attack the issue, not the person.
 - Follow the GitHub Community Guidelines.
 
-Reports of abusive, harassing, or otherwise unacceptable behavior may be sent to support@mobilepos.com. The MobilePos team reserves the right to moderate, edit, or remove content that violates these guidelines.
+Reports of abusive, harassing, or otherwise unacceptable behavior may be sent to support@mobilepos.com. The X1 team reserves the right to moderate, edit, or remove content that violates these guidelines.
