@@ -1,5 +1,5 @@
 name: "\U0001F4DA Documentation feedback"
-description: Report problems, issues, suggestions, or requests for X1 / MobilePos documentation.
+description: Report problems, issues, suggestions, or requests for X1 documentation.
 labels:
   - needs-triage
   - type:documentation

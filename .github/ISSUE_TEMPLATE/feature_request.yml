@@ -1,5 +1,5 @@
 name: "\U0001F4A1 Feature request"
-description: Suggest an improvement or new capability for X1 / MobilePos.
+description: Suggest an improvement or new capability for X1.
 labels:
   - needs-triage
   - type:feature
