@@ -11,7 +11,7 @@ body:
     attributes:
       value: |
         Use this form to report documentation problems or suggest improvements.
-        Public documentation: https://docs.x1.tech
+        Public documentation: https://docs.posx1.ai
   - type: dropdown
     id: doc_area
     attributes:
@@ -40,7 +40,7 @@ body:
     attributes:
       label: Documentation page URL
       description: Link the exact page or section from our public documentation site.
-      placeholder: https://docs.x1.tech/...
+      placeholder: https://docs.posx1.ai/...
     validations:
       required: true
   - type: textarea

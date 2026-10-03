@@ -35,7 +35,7 @@ body:
     attributes:
       label: Page URL
       description: Paste the exact X1 HQ page URL if available.
-      placeholder: https://hq.x1.tech/...
+      placeholder: https://hq.posx1.ai/...
   - type: input
     id: browser
     attributes:

@@ -16,7 +16,7 @@ body:
     id: storefront_url
     attributes:
       label: Storefront URL
-      placeholder: https://order.x1.tech/your-brand
+      placeholder: Paste the URL of your restaurant's online ordering page
     validations:
       required: true
   - type: dropdown
